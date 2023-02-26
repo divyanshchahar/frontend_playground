@@ -1,11 +1,10 @@
-import Profile from "./components/Profile";
-import ActionButtons from "./components/ActionButtons";
+
+import TodoList from "./components/TodoList";
 
 function App() {
   return (
     <div>
-      <Profile />
-      <ActionButtons />
+      <TodoList />
     </div>
   );
 }
