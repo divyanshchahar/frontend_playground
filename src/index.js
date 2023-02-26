@@ -8,7 +8,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import todoReducer from "./features/todos";
 
-const store = configureStore({ reducers: { todos: todoReducer } });
+const store = configureStore({ reducer: { todos: todoReducer } });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
