@@ -1,8 +1,13 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Profile from "./components/Profile";
+import ActionButtons from "./components/ActionButtons";
 
 function App() {
-  return <div>Blank App</div>;
+  return (
+    <div>
+      <Profile />
+      <ActionButtons />
+    </div>
+  );
 }
 
 export default App;
