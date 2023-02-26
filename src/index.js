@@ -10,6 +10,7 @@ import todoReducer from "./features/todos";
 
 const store = configureStore({ reducer: { todos: todoReducer } });
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
