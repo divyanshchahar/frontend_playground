@@ -4,15 +4,19 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+// importing functionality for redux
 import { Provider } from "react-redux";
-import userReducer from "./features/users";
 import { configureStore } from "@redux/toolkit";
+
+// importing reducers
+import userReducer from "./features/users";
 
 const store = configureStore({ reducers: userReducer });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    {/* store provided to the app using provider */}
     <Provider store={store}>
       <App />
     </Provider>
